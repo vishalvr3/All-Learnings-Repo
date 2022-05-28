@@ -1,1 +1,4 @@
 /************** HTML-CSS Folder Structure **************/
+
+01- DOM Learnings:
+			01: selector learnings(building structure)

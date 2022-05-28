@@ -1,0 +1,286 @@
+/* AREA LAYOUT*/
+.new-navy-nagar {
+  width: 100%;
+  display: flex;
+}
+/* BUILDING LAYOUT */
+.building {
+  background-color: rgb(20, 20, 121);
+  width: 50%;
+  height: 650px;
+  border: 2px solid #000;
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.building .floor {
+  background-color: grey;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5px;
+}
+
+.building .top {
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+/* FLOORS LAYOUT */
+/* first-floor */
+.building .first-floor .floor-no {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.building .first-floor .floor-layout {
+  background-color: olive;
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+}
+
+.building .first-floor .floor-layout .left,
+.right {
+  background-color: red;
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.building .first-floor .floor-layout .middle {
+  background-color: pink;
+  width: 10%;
+  height: 100%;
+}
+
+/* SIDES LAYOUT */
+.building .first-floor .floor-layout .left .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.building .first-floor .floor-layout .right .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Rooms layout */
+.first-floor .floor-layout .side .room {
+  background-color: orange;
+  width: 48%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* second-floor */
+.building .second-floor .floor-no {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.building .second-floor .floor-layout {
+  background-color: olive;
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+}
+
+.building .second-floor .floor-layout .left,
+.right {
+  background-color: red;
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.building .second-floor .floor-layout .middle {
+  background-color: pink;
+  width: 10%;
+  height: 100%;
+}
+
+/* SIDES LAYOUT */
+.building .second-floor .floor-layout .left .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.building .second-floor .floor-layout .right .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Rooms layout */
+.second-floor .floor-layout .side .room {
+  background-color: orange;
+  width: 48%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* third-floor */
+.building .third-floor .floor-no {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.building .third-floor .floor-layout {
+  background-color: olive;
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+}
+
+.building .third-floor .floor-layout .left,
+.right {
+  background-color: red;
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.building .third-floor .floor-layout .middle {
+  background-color: pink;
+  width: 10%;
+  height: 100%;
+}
+
+/* SIDES LAYOUT */
+.building .third-floor .floor-layout .left .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.building .third-floor .floor-layout .right .side {
+  background-color: magenta;
+  width: 100%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Rooms layout */
+.third-floor .floor-layout .side .room {
+  background-color: orange;
+  width: 48%;
+  height: 45%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* BUILDING ENTERANCE */
+.building .ground {
+  background: rgb(195, 195, 202);
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.enterance {
+  background-color: black;
+  color: #fff;
+  width: 50%;
+  height: 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SUBMIT BUTTON STYLING */
+.button-container {
+  /* background-color: aquamarine; */
+  margin-top: 10px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  background-color: darksalmon;
+  width: 200px;
+  height: 25px;
+  border-radius: 10px;
+}

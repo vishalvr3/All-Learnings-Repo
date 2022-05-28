@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!----- *********************************************************************----->
+    <!----- *********** DESIGNING BUILDING (using all div container) ************----->
+    <!----- *********************************************************************----->
+    <!-- 
+     {{{{{{{{{ TOTAL DIVS = 2 + 2 + (81*2) = 166 divs }}}}}}}} // correcyt count
+    
+     level-1: (area and button-container, total divs-2)
+             div-1: new navy nagar (1 area)
+             div-2: submit button container (1-button container)
+
+     level-2: (two buildings, total divs-2)
+             div-1: building building-dhanush (1)
+             div-2: building building-tula (1)
+
+            (inside 1-building, total divs- 5+7+9+12+48=81 divs)
+    level-3: (building-layout, total divs-5)
+             div-1: top (building-name container) (1)
+             div-2: third-floor (1)
+             div-3: second-floor (1)
+             div-4: first-floor (1)
+             div-5: ground-floor (1)
+
+    level-4: (3-floor's layout && 1-ground layout, total divs-7)
+            (floor-layout)
+            div-1: floor-no (3)
+            div-2: floor-layout (3)
+
+            (ground-layout)
+            div-3: enterance (1)
+
+
+    level-5: (inside 3-floor-layout, total divs-9)
+             div-1: left (3)
+             div-2: middle (3)
+             div-3: right (3)
+
+    level-6: (left and right divs has two quarters(AB CD) each side, total divs-12)
+              (left side)
+             div-1: side-A (3)
+             div-B: side-B (3)
+              (right side)
+             div-C: side-C (3)
+             div-D: side-D (3)
+    level-7: (each side has 4 room's- hall, kitchen, bedroom, verandah, total divs-48)
+             (inside 1-side, there are 4-rooms, there are 12 sides so, 48 rooms in a bulding)
+             div-1: Hall (1)
+             div-2: Kitchen (1)
+             div-3: Bedroom (1)
+             div-4: Verandah (1)
+     -->
+    <div class="new-navy-nagar">
+      <div class="building building-dhanush">
+        <!-- TOP -->
+        <div class="top">
+          <h3>DHANUSH BUILDING</h3>
+        </div>
+
+        <!-- third-floor -->
+        <div class="floor third-floor">
+          <div class="floor-no">
+            <h4>3rd-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second-floor -->
+        <div class="floor second-floor">
+          <div class="floor-no">
+            <h4>2nd-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- first-floor -->
+        <div class="floor first-floor">
+          <div class="floor-no">
+            <h4>1st-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUND -->
+        <div class="ground">
+          <div class="enterance">ENTERANCE</div>
+        </div>
+      </div>
+
+      <div class="building building-tula">
+        <!-- TOP -->
+        <div class="top">
+          <h3>TULA BUILDING</h3>
+        </div>
+
+        <!-- third-floor -->
+        <div class="floor third-floor">
+          <div class="floor-no">
+            <h4>3rd-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah tulaThirdDVerandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second-floor -->
+        <div class="floor second-floor">
+          <div class="floor-no">
+            <h4>2nd-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- first-floor -->
+        <div class="floor first-floor">
+          <div class="floor-no">
+            <h4>1st-floor</h4>
+          </div>
+          <div class="floor-layout">
+            <div class="left">
+              <div class="side side-A">
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+              </div>
+              <div class="side side-B">
+                <div class="room hall">Hall</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room bedroom">Bedroom</div>
+              </div>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+              <div class="side side-C">
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+              </div>
+              <div class="side side-D">
+                <div class="room kitchen">Kitchen</div>
+                <div class="room hall">Hall</div>
+                <div class="room bedroom">Bedroom</div>
+                <div class="room Verandah">Verandah</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUND -->
+        <div class="ground">
+          <div class="enterance">ENTERANCE</div>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="submit">SUBMIT</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./dom-1.js"></script>
+  </body>
+</html>
